@@ -29,6 +29,15 @@ body {
   background-color: #0f1118;
 }
 
+.offline {
+  color: #ff5a3d;
+}
+
+img {
+  height: 3rem;
+  width: 3rem;
+}
+
 .main {
   height: 100vh;
   display: flex;
@@ -36,17 +45,32 @@ body {
   align-items: center;
 }
 
-.card {
+.landing-main {
   margin: 40px;
+}
+
+.card {
+  width: 100%;
   color: #fafafa;
   background-color: #181a22;
   border-color: #4e9992;
 }
 
-img {
-  height: 5rem;
-  width: 5rem;
+.card-body {
+  display: flex;
+  align-items: center;
+}
+
+.details-section {
+  margin-left: 40px;
+}
+
+.label-section {
+  margin-left: 20px;
 }
 
 @media (max-width: 600px) {
+  p {
+    font-size: 1em;
+  }
 }

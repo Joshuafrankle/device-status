@@ -9,9 +9,9 @@ export default function LandingPage() {
 
   useEffect(() => {
     axios
-      .get("http://opencloud-dev.herokuapp.com/")
+      .get("http://opencloud-dev.herokuapp.com")
       .then((res) => {
-        console.log(res.data["device status"]);
+        setData(res.data["device status"]);
         setLoading(false);
       })
       .catch((error) => {
@@ -26,24 +26,24 @@ export default function LandingPage() {
         <Loader />
       ) : (
         <>
-          <section>
-            <div className="card mb-3">
-              <div className="card-body">
-                <div className="d-flex align-items-center">
+          <section className="landing-main">
+            {data.map((data, id) => (
+              <div className="card mb-3" key={id}>
+                <div className="card-body">
                   <img src={Img} alt="image" />
-                  <div className="">
+                  <div className="label-section fw-bold">
                     <p> Hostname:</p>
                     <p> Status:</p>
                     <p> Address:</p>
                   </div>
-                  <div className="" style={{ marginRight: "auto" }}>
-                    <p>Hello World</p>
-                    <p>ONLINE</p>
-                    <p>192.168.0.24</p>
+                  <div className="details-section">
+                    <p>{data.host}</p>
+                    <p>{data.status}</p>
+                    <p>{data["ip address"]}</p>
                   </div>
                 </div>
               </div>
-            </div>
+            ))}
           </section>
         </>
       )}
