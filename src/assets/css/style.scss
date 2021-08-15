@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+@import url("./landing-page.css");
+@import url("./error-page.css");
+
+/* Custom Scrollbar */
+html::-webkit-scrollbar {
+  width: 10px;
+}
+html::-webkit-scrollbar-track {
+  background-color: #1b1b1b;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: #fafafa;
+  border-radius: 10px;
+}
+/* Custom Scrollbar */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  color: #ffffff;
+}
+
+body {
+  background-color: #0f1118;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin: 40px;
+  color: #fafafa;
+  background-color: #181a22;
+  border-color: #4e9992;
+}
+
+img {
+  height: 5rem;
+  width: 5rem;
+}
+
+@media (max-width: 600px) {
+}
