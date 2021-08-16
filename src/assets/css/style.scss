@@ -40,67 +40,7 @@ img {
   width: 5rem;
 }
 
-.main {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.heading-section {
-  display: flex;
-  justify-content: space-between;
-}
-
-.landing-main {
-  margin: 40px;
-}
-
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  grid-gap: 20px;
-  align-items: stretch;
-}
-.card {
-  background-color: #f0f0f0;
-  color: #1d1d1d;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-.card-body {
-  display: flex;
-}
-
-.pattarai-text {
-  font-family: "Montserrat";
-  margin-left: 6px;
-  letter-spacing: 10px;
-}
-
-.server-status {
-  font-family: "Montserrat";
-  font-weight: bold;
-}
-
-.text-uppercase {
-  color: #141414;
-}
-
 .offline-card > * {
   background-color: #ff8686;
   border-color: #ff5a3d;
-}
-
-.details-section {
-  margin-left: 40px;
-}
-
-.label-section {
-  margin-left: 20px;
-}
-
-@media (max-width: 600px) {
-  p {
-    font-size: 1em;
-  }
 }

@@ -1,3 +1,10 @@
+.error-main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .error-glass {
   background: linear-gradient(
     to right bottom,

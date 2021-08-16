@@ -3,7 +3,7 @@ import Warning from "../assets/images/warning.png";
 export default function Error404() {
   return (
     <>
-      <section className="main">
+      <section className="error-main">
         <div>
           <div className="error-glass text-center">
             <img className="error-img mb-4" src={Warning} alt="Done" />
