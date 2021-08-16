@@ -38,7 +38,7 @@ export default function LandingPage() {
                 <p className="mb-0 pattarai-text">PATTARAI'S</p>
                 <h1 className="mb-5 server-status">Server Status</h1>
               </div>
-              <img src={Img} alt="Image" />
+              <img src={Img} alt="" />
             </div>
             <section className="card-grid">
               {data.map((data, id) =>
