@@ -1,36 +1,35 @@
 import { useState, useEffect } from "react";
-import Loader from "../components/Loader";
 import axios from "axios";
 import Cards from "./Cards";
+import Loader from "../components/Loader";
+import Problem from "../components/Problem";
 import Img from "../assets/images/pattarai-black.png";
 
 export default function LandingPage() {
   const [loading, setLoading] = useState(true);
-  const [data, setData] = useState([
-    {
-      host: "myself",
-      status: "offline",
-      "ip address": "121121341",
-    },
-  ]);
+  const [error, setError] = useState(false);
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     axios
       .get("http://opencloud-dev.herokuapp.com")
       .then((res) => {
         setData(res.data["device status"]);
-        console.log(data);
         setLoading(false);
       })
-      .catch((error) => {
-        console.log(error);
+      .catch(() => {
+        setError(true);
+        setLoading(false);
       });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
     <>
       {loading ? (
         <Loader />
+      ) : error ? (
+        <Problem />
       ) : (
         <>
           <div className="landing-main">
