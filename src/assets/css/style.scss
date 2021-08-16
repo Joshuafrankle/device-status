@@ -23,7 +23,7 @@ h3,
 h4,
 h5,
 p {
-  color: #1d1d1d;
+  color: #1d1d1d !important;
 }
 
 p {
@@ -43,4 +43,15 @@ img {
 .offline-card > * {
   background-color: #ff8686;
   border-color: #ff5a3d;
+}
+
+.pattarai-text {
+  font-family: "Montserrat";
+  margin-left: 5px;
+  letter-spacing: 10px;
+}
+
+.server-status {
+  font-family: "Montserrat";
+  font-weight: bold;
 }

@@ -32,13 +32,13 @@ export default function LandingPage() {
         <Problem />
       ) : (
         <>
-          <div className="landing-main">
-            <div className="heading-section">
-              <div className="">
+          <section className="landing-main">
+            <div className="head-section">
+              <div>
                 <p className="mb-0 pattarai-text">PATTARAI'S</p>
                 <h1 className="mb-5 server-status">Server Status</h1>
               </div>
-              <img src={Img} alt="" />
+              <img src={Img} alt="Image" />
             </div>
             <section className="card-grid">
               {data.map((data, id) =>
@@ -47,13 +47,13 @@ export default function LandingPage() {
                     <Cards data={data} />
                   </div>
                 ) : (
-                  <div className="online-div" key={id}>
+                  <div key={id}>
                     <Cards data={data} />
                   </div>
                 )
               )}
             </section>
-          </div>
+          </section>
         </>
       )}
     </>

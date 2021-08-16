@@ -6,14 +6,9 @@
 }
 
 .error-glass {
-  background: linear-gradient(
-    to right bottom,
-    rgba(23, 25, 35, 0.7),
-    rgba(23, 25, 35, 0.3)
-  );
-  z-index: 2;
+  background-color: #f0f0f0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 2rem;
-  backdrop-filter: blur(2rem);
   padding: 60px;
 }
 
