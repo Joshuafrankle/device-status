@@ -22,15 +22,11 @@ h3,
 h4,
 h5,
 p {
-  color: #ffffff;
+  color: #1d1d1d;
 }
 
 body {
-  background-color: #0f1118;
-}
-
-.offline {
-  color: #ff5a3d;
+  background-color: #f0f0f0;
 }
 
 img {
@@ -47,13 +43,21 @@ img {
 
 .landing-main {
   margin: 40px;
+  display: grid;
 }
 
 .card {
   width: 100%;
-  color: #fafafa;
-  background-color: #181a22;
-  border-color: #4e9992;
+  color: #1d1d1d;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-color: #ffffff;
+}
+
+.offline-card > * {
+  background-color: #ff8686;
+  border-color: #ff5a3d;
+  color: #ff5a3d;
 }
 
 .card-body {
