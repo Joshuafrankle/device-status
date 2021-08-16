@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Loader from "../components/Loader";
 import axios from "axios";
 import Cards from "./Cards";
-import Img from "../assets/images/logo.png";
+import Img from "../assets/images/pattarai-black.png";
 
 export default function LandingPage() {
   const [loading, setLoading] = useState(true);
