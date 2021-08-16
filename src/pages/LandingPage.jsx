@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Loader from "../components/Loader";
 import axios from "axios";
 import Cards from "./Cards";
-// import Img from "../assets/images/server.png";
+import Img from "../assets/images/logo.png";
 
 export default function LandingPage() {
   const [loading, setLoading] = useState(true);
@@ -33,19 +33,28 @@ export default function LandingPage() {
         <Loader />
       ) : (
         <>
-          <section className="landing-main">
-            {data.map((data, id) =>
-              data.status === "offline" ? (
-                <div className="offline-card" key={id}>
-                  <Cards data={data} />
-                </div>
-              ) : (
-                <div className="" key={id} style={{ width: "100%" }}>
-                  <Cards data={data} />
-                </div>
-              )
-            )}
-          </section>
+          <div className="landing-main">
+            <div className="heading-section">
+              <div className="">
+                <p className="mb-0 pattarai-text">PATTARAI'S</p>
+                <h1 className="mb-5 server-status">Server Status</h1>
+              </div>
+              <img src={Img} alt="" />
+            </div>
+            <section className="card-grid">
+              {data.map((data, id) =>
+                data.status === "offline" ? (
+                  <div className="offline-card" key={id}>
+                    <Cards data={data} />
+                  </div>
+                ) : (
+                  <div className="online-div" key={id}>
+                    <Cards data={data} />
+                  </div>
+                )
+              )}
+            </section>
+          </div>
         </>
       )}
     </>

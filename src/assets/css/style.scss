@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
 @import url("./landing-page.css");
 @import url("./error-page.css");
+@import url("../fonts/font.css");
 
 /* Custom Scrollbar */
 html::-webkit-scrollbar {
@@ -25,13 +26,18 @@ p {
   color: #1d1d1d;
 }
 
+p {
+  margin-bottom: 10px;
+  font-family: "Poppins";
+}
+
 body {
   background-color: #f0f0f0;
 }
 
 img {
-  height: 3rem;
-  width: 3rem;
+  height: 5rem;
+  width: 5rem;
 }
 
 .main {
@@ -41,28 +47,48 @@ img {
   align-items: center;
 }
 
-.landing-main {
-  margin: 40px;
-  display: grid;
+.heading-section {
+  display: flex;
+  justify-content: space-between;
 }
 
+.landing-main {
+  margin: 40px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+}
 .card {
-  width: 100%;
+  background-color: #f0f0f0;
   color: #1d1d1d;
-  background-color: #ffffff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-color: #ffffff;
+}
+.card-body {
+  display: flex;
+}
+
+.pattarai-text {
+  font-family: "Montserrat";
+  margin-left: 6px;
+  letter-spacing: 10px;
+}
+
+.server-status {
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+
+.text-uppercase {
+  color: #141414;
 }
 
 .offline-card > * {
   background-color: #ff8686;
   border-color: #ff5a3d;
-  color: #ff5a3d;
-}
-
-.card-body {
-  display: flex;
-  align-items: center;
 }
 
 .details-section {
