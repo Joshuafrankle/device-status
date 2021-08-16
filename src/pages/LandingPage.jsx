@@ -12,7 +12,7 @@ export default function LandingPage() {
 
   useEffect(() => {
     axios
-      .get("http://opencloud-dev.herokuapp.com")
+      .get("https://opencloud-dev.herokuapp.com")
       .then((res) => {
         setData(res.data["device status"]);
         setLoading(false);
