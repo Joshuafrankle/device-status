@@ -24,7 +24,10 @@
   margin-left: 15%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 448px) {
+  .card {
+    width: 90%;
+  }
   .pattarai-text {
     font-size: 10px;
     margin-left: 1px;
@@ -36,5 +39,8 @@
   img {
     height: 3.5rem;
     width: 3.5rem;
+  }
+  .card-text {
+    font-size: 10px;
   }
 }
