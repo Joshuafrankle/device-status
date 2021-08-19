@@ -15,7 +15,7 @@ export default function Cards({ data }) {
             <p className="card-text text-wrap text-uppercase fw-bold">
               {data.status}
             </p>
-            <p className="card-text text-wrap">{data["ip address"]}</p>
+            <p className="card-text text-wrap">{data.ip_address}</p>
           </div>
         </div>
       </div>
