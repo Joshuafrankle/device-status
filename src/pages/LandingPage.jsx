@@ -33,7 +33,7 @@ export default function LandingPage() {
             <h1 className="server-status">Server Status</h1>
           </div>
           <div className="date_time">
-            <span className="date_time">{time} </span>
+            <span>{time} </span>
             <span>{date}</span>
           </div>
         </div>
