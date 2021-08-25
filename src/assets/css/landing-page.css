@@ -42,22 +42,19 @@
 }
 
 @media (max-width: 448px) {
-  .card {
-    width: 90%;
-  }
-  .pattarai-text {
-    letter-spacing: 1px;
-  }
-  .server-status {
-    font-size: 22px;
-  }
   img {
     margin-right: 30px;
     height: 2rem;
     width: 2rem;
   }
+  .card {
+    width: 90%;
+  }
   .card-text {
     font-size: 10px;
+  }
+  .server-status {
+    font-size: 22px;
   }
   .date-time {
     margin-left: 30px;
