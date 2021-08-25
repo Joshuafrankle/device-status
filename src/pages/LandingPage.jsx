@@ -32,7 +32,7 @@ export default function LandingPage() {
             <p className="mb-0 pattarai-text">PATTARAI'S</p>
             <h1 className="server-status">Server Status</h1>
           </div>
-          <div className="date_time">
+          <div className="date-time">
             <span>{time} </span>
             <span>{date}</span>
           </div>
