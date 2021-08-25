@@ -9,11 +9,11 @@ const BorderLinearProgress = withStyles(() => ({
     borderRadius: 5,
   },
   colorPrimary: {
-    backgroundColor: "#2e2e2e",
+    backgroundColor: "#b3b3b3",
   },
   bar: {
     borderRadius: 5,
-    backgroundColor: "#b3b3b3",
+    backgroundColor: "#2e2e2e",
   },
 }))(LinearProgress);
 
