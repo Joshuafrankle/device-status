@@ -1,8 +1,8 @@
 import axios from "axios";
+import useSWR from "swr";
 import Cards from "./Cards";
 import Loader from "../components/Loader";
 import Problem from "../components/Problem";
-import useSWR from "swr";
 import Img from "../assets/images/pattarai-black.png";
 
 export default function LandingPage() {
