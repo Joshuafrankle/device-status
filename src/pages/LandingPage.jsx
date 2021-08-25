@@ -18,17 +18,24 @@ export default function LandingPage() {
   if (!res) {
     return <Loader />;
   }
+  if (res) {
+    var time = res.updated_time.split(" ")[1];
+    var date = res.updated_time.split(" ")[0];
+  }
 
   return (
     <>
       <section className="landing-main">
-        <div className="head-section">
-          <div>
-            <p className="mb-0 pattarai-text">PATTARAI'S</p>
-            <h1 className="mb-5 server-status">Server Status</h1>
-          </div>
+        <div className="head-section mb-5">
           <img src={Img} alt="" />
-          {/* <p>{time} </p> */}
+          <div className="text-center">
+            <p className="mb-0 pattarai-text">PATTARAI'S</p>
+            <h1 className="server-status">Server Status</h1>
+          </div>
+          <div className="date_time">
+            <span className="date_time">{time} </span>
+            <span>{date}</span>
+          </div>
         </div>
         <section className="card-grid">
           {res.device_status.map((data, id) =>
