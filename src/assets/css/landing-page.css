@@ -8,10 +8,6 @@
   align-items: center;
 }
 
-.pattarai-text {
-  font-size: 10px;
-}
-
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -25,22 +21,24 @@
   display: flex;
 }
 
-.details-section {
-  margin-left: 15%;
-}
-
 .date-time {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-
 .date-time > span {
   font-size: 18px;
 }
-
 .date-time > span:nth-child(1) {
   font-weight: 500;
+}
+
+.details-section {
+  margin-left: 15%;
+}
+
+.pattarai-text {
+  font-size: 10px;
 }
 
 @media (max-width: 448px) {
