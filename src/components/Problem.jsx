@@ -5,7 +5,7 @@ export default function Problem() {
     <>
       <section className="error-main">
         <div>
-          <div className="error-glass text-center">
+          <div className="error-card text-center">
             <img className="error-img mb-4" src={Tick} alt="Done" />
             <h3 className="">Uh Oh!</h3>
             <h4 className="mt-4">
