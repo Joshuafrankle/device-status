@@ -31,10 +31,11 @@ export default function LandingPage() {
           <div className="head-section mb-5">
             <img src={Img} alt="" />
             <div className="text-center">
-              <p className="mb-0 pattarai-text">PATTARAI'S</p>
+              <p className="mb-0 mt-2 pattarai-text">PATTARAI'S</p>
               <h1 className="server-status">Server Status</h1>
             </div>
             <div className="date-time">
+              <p className="mb-1 last-updated">Last updated</p>
               <span>{time} </span>
               <span>{date}</span>
             </div>

@@ -29,8 +29,13 @@
 .date-time > span {
   font-size: 18px;
 }
-.date-time > span:nth-child(1) {
-  font-weight: 500;
+.date-time > span:nth-child(2) {
+  font-weight: 600;
+}
+
+.last-updated {
+  font-size: 10px;
+  letter-spacing: 1px;
 }
 
 .details-section {
@@ -61,5 +66,8 @@
   }
   .date-time > span {
     font-size: 15px;
+  }
+  .last-updated {
+    font-size: 8px;
   }
 }
